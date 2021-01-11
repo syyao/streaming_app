@@ -71,7 +71,9 @@ class _Profile2State extends State<Profile2> {
                       decoration: BoxDecoration(
                           color: Colors.red, shape: BoxShape.circle),
                       child: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed("modifProfile");
+                        },
                         icon: Icon(
                           Icons.edit,
                           color: Colors.black,

@@ -1,25 +1,32 @@
-import 'package:flutter/material.dart';
-
+import 'babiflix/screen/Abonement1.dart';
 import 'babiflix/screen/Accueil1.dart';
+import 'babiflix/screen/BienvenuAbon.dart';
 import 'babiflix/screen/Chaine.dart';
+
+import 'babiflix/screen/InformationAbone.dart';
 import 'babiflix/screen/Liste_Animes.dart';
 import 'babiflix/screen/Liste_Films.dart';
 import 'babiflix/screen/Liste_Novelas.dart';
 import 'babiflix/screen/Liste_Serie.dart';
-import 'babiflix/screen/Liste_films_Action.dart';
+import 'babiflix/screen/MoadifModepass.dart';
 import 'babiflix/screen/afrik.dart';
-import 'babiflix/screen/connexion.dart';
 import 'babiflix/screen/detailserie.dart';
 import 'babiflix/screen/film.dart';
-import 'babiflix/screen/inscription.dart';
+import 'babiflix/screen/loginView.dart';
+import 'babiflix/screen/modifProfile.dart';
 import 'babiflix/screen/novelas.dart';
 import 'babiflix/screen/parametr.dart';
 import 'babiflix/screen/profile.dart';
+import 'babiflix/screen/profile1.dart';
 import 'babiflix/screen/profile2.dart';
 import 'babiflix/screen/radio.dart';
 import 'babiflix/screen/serie.dart';
 import 'babiflix/screen/suggession.dart';
 import 'babiflix/screen/tele.dart';
+import 'package:flutter/material.dart';
+import 'babiflix/screen/acceuil.dart';
+import 'babiflix/screen/connexion.dart';
+import 'babiflix/screen/inscription.dart';
 import 'babiflix/screen/youtbe.dart';
 import 'babiflix/widget/VoirPlus.dart';
 import 'babiflix/widget/detailTele.dart';
@@ -49,7 +56,7 @@ class MyApp extends StatelessWidget {
           "inscr": (context) => Acceuil1(),
           "connec": (context) => Acceuil1(),
           "teve": (context) => Tele(),
-          "Liste_films_Action": (context) => ListefilmsAction(),
+          // "Liste_films_Action": (context) => ListefilmsAction(),
           "seri": (context) => SerieCate(),
           "ytb": (context) => Youtbe(),
           "radio": (context) => RadioCate(),
@@ -72,6 +79,11 @@ class MyApp extends StatelessWidget {
           "Liste_Animes": (context) => ListeAnimes(),
           "Liste_Novelas": (context) => ListeNovelas(),
           "detailserie": (context) => DetailSerie(),
+          "modifProfile": (context) => ModiProfile(),
+          "MoadifModepass": (context) => MoadifModepass(),
+          "Abonement1": (context) => Abonement1(),
+          "InformationAbone": (context) => InformationAbone(),
+          "BienvenuAbon": (context) => BienvenuAbon()
         });
   }
 }

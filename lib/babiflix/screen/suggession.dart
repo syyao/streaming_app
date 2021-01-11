@@ -47,6 +47,8 @@ class _MainBodyState extends State<MainBody> {
               ),
             ),
             TextField(
+              cursorColor: Colors.white,
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                   labelText: "Rechercher ou entrer un lien",
                   icon: IconButton(

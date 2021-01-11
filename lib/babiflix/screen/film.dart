@@ -112,7 +112,7 @@ class _FilmState extends State<Film> {
                             fontWeight: FontWeight.bold),
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: <Widget>[
                           Container(
                             height: 100,

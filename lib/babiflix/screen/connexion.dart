@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Connexion extends StatefulWidget {
+  static const routeName = "connexion";
   @override
   _ConnexionState createState() => _ConnexionState();
 }

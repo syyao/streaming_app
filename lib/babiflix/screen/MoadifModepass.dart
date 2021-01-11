@@ -1,17 +1,17 @@
-import 'package:chips_choice/chips_choice.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class ModiProfile extends StatefulWidget {
+
+class MoadifModepass extends StatefulWidget {
   @override
-  _ModiProfileState createState() => _ModiProfileState();
+  _MoadifModepassState createState() => _MoadifModepassState();
 }
 
-class _ModiProfileState extends State<ModiProfile> {
+class _MoadifModepassState extends State<MoadifModepass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+      backgroundColor: Color(0xff191919),
+      appBar: AppBar(
           leading: IconButton(
               icon: Icon(Icons.arrow_back),
               color: Colors.red,
@@ -21,22 +21,19 @@ class _ModiProfileState extends State<ModiProfile> {
           backgroundColor: Color(0xff191919),
           centerTitle: true,
           title: Text(
-            'Modifier Profil',
+            'Modifier Mot de pass',
             style: TextStyle(color: Colors.red),
           ),
           elevation: 0,
-          actions: [
-            // IconButton(
-            //   icon: Icon(Icons.check, color: Colors.red),
-            //   onPressed: () {},
-            // )
-          ],
+     
         ),
-        body: SingleChildScrollView(
+         body: SingleChildScrollView(
           child: Container(
             width: MediaQuery.of(context).size.width,
             color: Color(0xff191919),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: 20),
                 Container(
@@ -49,7 +46,7 @@ class _ModiProfileState extends State<ModiProfile> {
                   child: Column(
                     children: [
                       Text(
-                        'Information générale',
+                        'Modifier mot de passe',
                         style: TextStyle(
                             color: Colors.red,
                             fontSize: 18,
@@ -57,7 +54,7 @@ class _ModiProfileState extends State<ModiProfile> {
                       ),
                       SizedBox(height: 30),
                       Text(
-                        'Nom & Prénom',
+                        "Ancien mot de passe",
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -73,7 +70,7 @@ class _ModiProfileState extends State<ModiProfile> {
                           decoration: InputDecoration(
                             suffixIcon:
                                 Icon(Icons.edit, color: Colors.grey, size: 15),
-                            hintText: 'Nom & prénoms',
+                            hintText: 'Ancien mot de passe',
                             border: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.red),
                             ),
@@ -82,16 +79,43 @@ class _ModiProfileState extends State<ModiProfile> {
                           ),
                         ),
                       ),
+                        Text(
+                        "Nouveau mot de passe",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                       SizedBox(height: 10),
+                         Container(
+                        width: MediaQuery.of(context).size.width / 1.4,
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white),
+                          cursorColor: Colors.white,
+                          decoration: InputDecoration(
+                            suffixIcon:
+                                Icon(Icons.edit, color: Colors.grey, size: 15),
+                            hintText: 'Nouveau mot de passe',
+                            border: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.red),
+                            ),
+                            hintStyle:
+                                TextStyle(color: Colors.grey.withOpacity(0.7)),
+                          ),
+                        ),
+                      ),
+                      
                       SizedBox(height: 20),
                       Text(
-                        'Date de Naissance',
+                        "Confirmation du mot de passe",
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       SizedBox(height: 10),
-                      Container(
+                         Container(
                         width: MediaQuery.of(context).size.width / 1.4,
                         child: TextField(
                           textAlign: TextAlign.center,
@@ -100,7 +124,7 @@ class _ModiProfileState extends State<ModiProfile> {
                           decoration: InputDecoration(
                             suffixIcon:
                                 Icon(Icons.edit, color: Colors.grey, size: 15),
-                            hintText: 'Date de Naissance',
+                            hintText: 'Confirmation du mot de passe',
                             border: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.red),
                             ),
@@ -109,56 +133,9 @@ class _ModiProfileState extends State<ModiProfile> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
-                      Text(
-                        'Email',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      SizedBox(height: 10),
-                      Container(
-                        width: MediaQuery.of(context).size.width / 1.4,
-                        child: TextField(
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
-                          cursorColor: Colors.white,
-                          decoration: InputDecoration(
-                            suffixIcon:
-                                Icon(Icons.edit, color: Colors.grey, size: 15),
-                            hintText: 'Email',
-                            border: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.red),
-                            ),
-                            hintStyle:
-                                TextStyle(color: Colors.grey.withOpacity(0.7)),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Changer de mot de passe',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          IconButton(
-                              icon: Icon(
-                                Icons.edit,
-                                color: Colors.grey,
-                                size: 15,
-                              ),
-                              onPressed: () {
-                                Navigator.of(context)
-                                    .pushNamed("MoadifModepass");
-                              }),
-                        ],
-                      ),
+                  
+                  
+                     
                       SizedBox(height: 20),
                       Container(
                         padding: EdgeInsets.all(10),
@@ -178,6 +155,8 @@ class _ModiProfileState extends State<ModiProfile> {
               ],
             ),
           ),
-        ));
+        )
+      
+    );
   }
 }

@@ -133,8 +133,8 @@ class _MainBodyState extends State<MainBody> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: MediaQuery.of(context).size.height / 2.6,
-                            width: MediaQuery.of(context).size.width / 2.3,
+                            height: MediaQuery.of(context).size.height / 2.8,
+                            width: MediaQuery.of(context).size.width / 2.6,
                             child: Column(
                               children: [
                                 Expanded(
@@ -181,8 +181,8 @@ class _MainBodyState extends State<MainBody> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: MediaQuery.of(context).size.height / 2.6,
-                            width: MediaQuery.of(context).size.width / 2.3,
+                            height: MediaQuery.of(context).size.height / 2.8,
+                            width: MediaQuery.of(context).size.width / 2.6,
                             child: Column(
                               children: [
                                 Expanded(
@@ -233,8 +233,8 @@ class _MainBodyState extends State<MainBody> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: MediaQuery.of(context).size.height / 2.6,
-                            width: MediaQuery.of(context).size.width / 2.3,
+                            height: MediaQuery.of(context).size.height / 2.8,
+                            width: MediaQuery.of(context).size.width / 2.6,
                             child: Column(
                               children: [
                                 Expanded(
@@ -280,8 +280,8 @@ class _MainBodyState extends State<MainBody> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            height: MediaQuery.of(context).size.height / 2.6,
-                            width: MediaQuery.of(context).size.width / 2.3,
+                            height: MediaQuery.of(context).size.height / 2.8,
+                            width: MediaQuery.of(context).size.width / 2.6,
                             child: Column(
                               children: [
                                 Expanded(

@@ -56,7 +56,9 @@ class _ProfilState extends State<Profil> {
                       ),
                       IconButton(
                         icon: Icon(Icons.edit, color: Colors.white),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
                       )
                     ],
                   ),
@@ -246,13 +248,7 @@ class _ProfilState extends State<Profil> {
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold),
                               ),
-                              Text(
-                                "*********",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                  fontSize: 13,
-                                ),
-                              ),
+                            
                             ],
                           ),
                           Spacer(),
